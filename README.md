@@ -40,7 +40,7 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 
     - Movimiento Cartesiano(espacio de la tarea):
     <p align="center">
-    <img src="img/Cartesian_movement.PNG" width="800">
+    <img src="img/Cartesian_movement.png" width="800">
     </p>
     Como se aprecia en la imagen las opciones de tool, world,Local y ECP permiten realizar movimientos cartesianos, recordando que al ser un robot de 4 grados de libertad(RRRP), no puede realizar rotaciones en torno a los ejes coordenados , solo moverse en XYZ y rotar en torno a Z(respecto a los globales).
 
