@@ -123,9 +123,6 @@ Este documento presenta una comparación detallada entre los robots utilizados e
 * Destacando ventajas, limitaciones y aplicaciones de cada herramienta.
 
 ## Diseño Gripper
-* Dise˜nar un gripper neum´atico por vac´ıo utilizando las entradas y salidas digitales del robot EPSON T3-401S, que tenga la capacidad de levantar un huevo de manera segura y estable.
-* Incluyendo diagrama esquem´atico, componentes utilizados y configuraci´on de las E/S digitales del robot.
-
 Se diseñó el siguiente soporte para un gripper neumático, como se puede ver, cuenta con una base la cual se engancha alrededor del eje del robot y se ajusta con un tornillo y tuerca con el fin de sujetarlo externamente y evitar complicaciones en su montaje.
 
 ![Gripper Neumático Diseñado](img/AdaptadorGripper.png)\
