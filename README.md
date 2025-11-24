@@ -24,7 +24,8 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 ## Movimiento EPSON T3-401S
 1. Descripción de las configuraciones **Home** del **EPSON T3-401S**, indicando la posición de cada articulación.
 
-    La posicion Home por defecto del Robot se puede configurar al gusto, nosotros seleccionamos una posicion en donde la posicion de la articulacion 1 es justo la mitad, permitiendole asi moverse en ambas direcciones como se muestra en la siguiente imagen:![Descripción del Home](img/Home_description.PNG)
+    La posicion Home por defecto del Robot se puede configurar al gusto, nosotros seleccionamos una posicion en donde la posicion de la articulacion 1 es justo la mitad, permitiendole asi moverse en ambas direcciones como se muestra en la siguiente imagen:
+   ![Descripción del Home](img/Home_description.PNG)
 
    Las respectivas posiciones articulares se muestran en el siguiente cuadro tomado del software :
     ![Descripción de Articulaciones del Home](img/Home_joints_values.PNG)
