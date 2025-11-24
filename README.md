@@ -155,7 +155,7 @@ Se diseñó el siguiente soporte para un gripper neumático, como se puede ver, 
 ![Gripper Neumático Diseñado](img/AdaptadorGripper.png)\
 Adaptador Gripper Neumático Diseñado
 
-A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encunetran en el siguiente [PDF](./Planos.pdf)
+A continuación se muestran algunos de los planos más importantes, sin embargo los planos completos se encunetran en el siguiente [PDF](./PlanosActu.pdf)
  
 ![Gripper Neumático 3D](img/Gripper3D.png)\
 Plano de vista isométrica con partes del gripper.
