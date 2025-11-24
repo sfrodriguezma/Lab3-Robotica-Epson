@@ -201,14 +201,14 @@ Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no tom
   Tu navegador no soporta video HTML5.
 </video>
 
-[Aquí se puede ver el video de la prueba con el Robot real:](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
+[Aquí se puede ver el video de la simulacion y de la prueba con el Robot real :](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
 
 ## Conclusiones
 
-* Con EPSON RC+ 7.0 se programó, simuló y corrió en el robot real: uso de Pallet 6×5, Jump y E/S digitales.
+* Se encontro que el software de los robots Epson tiene una interfaz amigable que permite programar rutinas con un lenguaje muy intutitivo conectandose al hardware de una manera muy simple.
 
-* Se diseñó e integró un gripper por vacío y se validó la lógica: ON = liberar, OFF = agarrar.
+* Se pudo comprobar que una simple ventosa neumatica acompañada de un acople prootipado por manufactura aditiva basica(impresion 3D) se puede integrar con el Epson para ejecutar rutinas de paletizado de objetos no tan pesados como ping pongs o pelotas(inclusive huevos).
 
-* Se implementó la trayectoria de tipo "caballo" alternando dos huevos, cubriendo las 30 posiciones, con impresión de estados y retorno y salida a Home.
+* Se demostro que el buen uso de la IA puede ayudar a generar trayectorias complejas en relativo poco tiempo (como en este caso con la rutina en forma de caballo de ajedrez), permitiendo aumentar la productividad y dedicar tiempo a otras tareas como el diseño del gripper y la puesta a punto del Hardware involucrado.
 
-* Mejoras propuestas: ventosas más adecuadas, pequeños tiempos de espera, y sensor de vacío para confirmar agarre.
+ * Como se pudo apreciar durante la ejecuacion real de la rutina la cubeta de huevos se movia mucho, razon por la cual en algunas ocasiones no se sujetaba bien el ping pong. Para resolver esto se propone fijar la cubeta con cinta o alguna tipo de adhesivo. Adiocnalmente se propone tener un sensor de vacio para poder corroborar el agarre del objeto en cuestion.
