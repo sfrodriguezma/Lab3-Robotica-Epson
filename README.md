@@ -383,6 +383,14 @@ flowchart TD
 
 ## Resultados
 
-* Video de simulaci´on en EPSON RC+ 7.0 mostrando la trayectoria completa y evidencia de su implementaci´on física en el manipulador EPSON T3-401S.
+El resultado del trabajo realizado se resume en el siguiente video, en donde se incluye:
+* Simulación en EPSON RC+ 7.0 de la trayectoria realizada, con una visión adicional de la salida que controla el paso de aire a las ventosas.
+* Movimiento a los puntos escogidos en el robot real.
+* Ejecución real de la tarea en el robot EPSON T3-401S
 
-* Video demostrativo del gripper neum´atico levantando un huevo de manera segura.
+Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no toma correctamente los huevos y por ello se mueven a mano al lugar a donde serían movidos. Para evitar esto y asegurar un movimiento preciso y confiable, se recomienda utilizar otro tipo de ventosas, que sean más adecuadas para la superficie a agarrar.
+
+<video width="1080" height="720" controls>
+  <source src="https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing" type="video/mp4">
+  Tu navegador no soporta video HTML5.
+</video>
