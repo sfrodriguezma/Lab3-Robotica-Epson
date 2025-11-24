@@ -25,12 +25,14 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 1. Descripción de las configuraciones **Home** del **EPSON T3-401S**, indicando la posición de cada articulación.
 
     La posicion Home por defecto del Robot se puede configurar al gusto, nosotros seleccionamos una posicion en donde la posicion de la articulacion 1 es justo la mitad, permitiendole asi moverse en ambas direcciones como se muestra en la siguiente imagen:![Descripción del Home](img/Home_description.PNG)
-    Las respectivas posiciones articulares se muestran en el siguiente cuadro tomado del software :
-    imagen:![Descripción de Articulaciones del Home](img/Home_joints_values.PNG)
+
+   Las respectivas posiciones articulares se muestran en el siguiente cuadro tomado del software :
+    ![Descripción de Articulaciones del Home](img/Home_joints_values.PNG)
+
     **Aca es importante destacar que los valores articulares se miden en pulsos de encoder**
    
 
-2. Describir el procedimiento y las teclas utilizadas para realizar el movimiento manual del manipulador **EPSON T3-401S** por articulaciones, cambiar a movimientos cartesianos y ejecutar movimientos de traslación y rotación en los ejes X, Y y Z.
+3. Describir el procedimiento y las teclas utilizadas para realizar el movimiento manual del manipulador **EPSON T3-401S** por articulaciones, cambiar a movimientos cartesianos y ejecutar movimientos de traslación y rotación en los ejes X, Y y Z.
  
     **Para esto se oprime F6 lo cual abre el robot manager**, una vez ahi se va a la parte de Jog and teach y alli se puede mover el robot por cualquiera de los metodos descritos previamente como se aprecia a continuacion:
     - Movimiento por articulaciones:
@@ -40,7 +42,7 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
 
     - Movimiento Cartesiano(espacio de la tarea):
     <p align="center">
-    <img src="img/Cartesian_movement.PNG" width="800">
+    <img src="img/Cartesian_movement.png" width="800">
     </p>
     Como se aprecia en la imagen las opciones de tool, world,Local y ECP permiten realizar movimientos cartesianos, recordando que al ser un robot de 4 grados de libertad(RRRP), no puede realizar rotaciones en torno a los ejes coordenados , solo moverse en XYZ y rotar en torno a Z(respecto a los globales).
 
@@ -52,7 +54,7 @@ Adicionalmente, se emplearon funciones personalizadas para la gestión de índic
     </p>
 
  <p align="center">
-    <img src="img/Speed_levels.PNG" width="800">
+    <img src="img/Speed_levels.png" width="800">
     </p>
  
 
@@ -142,9 +144,6 @@ RoboDK es flexible y multimarca, ideal para educación o uso en robots no tan co
 - **RobotStudio:** Es el más completo y avanzado de todos pero con la limitante de que solo funciona para robots de la marca ABB.
 
 ## Diseño Gripper
-* Dise˜nar un gripper neum´atico por vac´ıo utilizando las entradas y salidas digitales del robot EPSON T3-401S, que tenga la capacidad de levantar un huevo de manera segura y estable.
-* Incluyendo diagrama esquem´atico, componentes utilizados y configuraci´on de las E/S digitales del robot.
-
 Se diseñó el siguiente soporte para un gripper neumático, como se puede ver, cuenta con una base la cual se engancha alrededor del eje del robot y se ajusta con un tornillo y tuerca con el fin de sujetarlo externamente y evitar complicaciones en su montaje.
 
 ![Gripper Neumático Diseñado](img/AdaptadorGripper.png)\
@@ -220,14 +219,14 @@ Como se puede ver en la ejecución real, la ventosa en contadas ocasiones no tom
   Tu navegador no soporta video HTML5.
 </video>
 
-[Aquí se puede ver el video de la prueba con el Robot real:](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
+[Aquí se puede ver el video de la simulacion y de la prueba con el Robot real :](https://drive.google.com/file/d/18k76xkAO51neKHTGluXk8eAtn8Q8kalG/view?usp=sharing)
 
 ## Conclusiones
 
-* Con EPSON RC+ 7.0 se programó, simuló y corrió en el robot real: uso de Pallet 6×5, Jump y E/S digitales.
+* Se encontro que el software de los robots Epson tiene una interfaz amigable que permite programar rutinas con un lenguaje muy intutitivo conectandose al hardware de una manera muy simple.
 
-* Se diseñó e integró un gripper por vacío y se validó la lógica: ON = liberar, OFF = agarrar.
+* Se pudo comprobar que una simple ventosa neumatica acompañada de un acople prootipado por manufactura aditiva basica(impresion 3D) se puede integrar con el Epson para ejecutar rutinas de paletizado de objetos no tan pesados como ping pongs o pelotas(inclusive huevos).
 
-* Se implementó la trayectoria de tipo "caballo" alternando dos huevos, cubriendo las 30 posiciones, con impresión de estados y retorno y salida a Home.
+* Se demostro que el buen uso de la IA puede ayudar a generar trayectorias complejas en relativo poco tiempo (como en este caso con la rutina en forma de caballo de ajedrez), permitiendo aumentar la productividad y dedicar tiempo a otras tareas como el diseño del gripper y la puesta a punto del Hardware involucrado.
 
-* Mejoras propuestas: ventosas más adecuadas, pequeños tiempos de espera, y sensor de vacío para confirmar agarre.
+ * Como se pudo apreciar durante la ejecuacion real de la rutina la cubeta de huevos se movia mucho, razon por la cual en algunas ocasiones no se sujetaba bien el ping pong. Para resolver esto se propone fijar la cubeta con cinta o alguna tipo de adhesivo. Adiocnalmente se propone tener un sensor de vacio para poder corroborar el agarre del objeto en cuestion.
